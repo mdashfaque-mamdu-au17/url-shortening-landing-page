@@ -9,11 +9,17 @@ import {
   Facebook,
   Pinterest,
 } from './components/SocialIcons/SocialIcon';
+import Form from './components/Sections/Form';
+import Card from './components/Card/Card';
+import Navbar from './components/Sections/Navbar';
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
+      <div className="relative">
+        <Navbar />
+      </div>
       <div className="mb-10">
         <Heading type="primary">More than just shorter links</Heading>
       </div>
@@ -89,6 +95,14 @@ function App() {
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="mt-20 mb-20 bg-black py-20 text-center px-4">
+        <Form />
+      </div>
+
+      <div className="mt-20 mb-20 bg-cream-white py-10 pl-4">
+        <Card />
       </div>
     </div>
   );
