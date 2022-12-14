@@ -4,7 +4,6 @@ import classNames from 'classnames';
 
 const Link = (props) => {
   const { type } = props;
-  console.log(props.children);
   const clickHandler = (e) => {
     e.preventDefault();
   };
