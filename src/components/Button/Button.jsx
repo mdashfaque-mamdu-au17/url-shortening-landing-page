@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Button = (props) => {
-  const { type, size, isCopied } = props;
+  const { type, size, isCopied, btnType } = props;
 
   const applyCommonStyle = () => {
     return 'bg-dark-cyan text-white font-bold transition-colors duration-500 ease-in hover:bg-dark-cyan-hover';
@@ -47,6 +47,7 @@ const Button = (props) => {
         applySize(),
         isCopied && 'bg-light-violet hover:bg-light-violet'
       )}
+      type={btnType}
     >
       {props.children}
     </button>
