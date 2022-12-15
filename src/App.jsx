@@ -17,7 +17,8 @@ function App() {
 
   return (
     <div>
-      <div className="relative">
+      {/* <div className="sticky top-10"> */}
+      <div>
         <Navbar />
       </div>
       <div className="mb-10">
