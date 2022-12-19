@@ -20,19 +20,24 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={formSubmitHandler}>
-        <Input
-          id="link"
-          name="link"
-          type="text"
-          label="Shorten a link here..."
-          error={inputLinkError}
-          errorMessage={inputLinkError ? 'Please add a link' : ''}
-          value={inputLink}
-          onChange={inputChangeHandler}
-        />
-        <div>
+    <div className="z-20 w-full">
+      <form
+        onSubmit={formSubmitHandler}
+        className="flex flex-col gap-4 w-full  md:flex-row md:justify-between md:gap-6"
+      >
+        <div className="w-full">
+          <Input
+            id="link"
+            name="link"
+            type="text"
+            label="Shorten a link here..."
+            error={inputLinkError}
+            errorMessage={inputLinkError ? 'Please add a link' : ''}
+            value={inputLink}
+            onChange={inputChangeHandler}
+          />
+        </div>
+        <div className="w-full md:w-[188px]">
           <Button type="square" size="large" btnType="submit">
             Shorten it
           </Button>
