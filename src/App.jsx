@@ -14,6 +14,8 @@ import Card from './components/Card/Card';
 import Navbar from './components/Sections/Navbar';
 import Hero from './components/Sections/Hero';
 import ShortenUrl from './components/Sections/ShortenUrl';
+import AboutBrand from './components/AboutBrand/AboutBrand';
+import Boost from './components/Sections/Boost';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,7 +30,8 @@ function App() {
         <Hero />
       </div>
       <ShortenUrl />
-
+      <AboutBrand />
+      <Boost />
       <div className="mb-10">
         <Heading type="primary">More than just shorter links</Heading>
       </div>
