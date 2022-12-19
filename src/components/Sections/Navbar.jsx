@@ -16,7 +16,7 @@ const Navbar = () => {
     document.body.style.overflow = 'auto';
   }
   return (
-    <nav className="">
+    <nav className="overflow-hidden">
       {/* mobile */}
       <div className="flex items-center justify-between px-6 mt-10 mb-6 lg:hidden">
         <div>
