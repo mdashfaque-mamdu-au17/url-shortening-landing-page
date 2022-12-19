@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Button = (props) => {
-  const { type, size, isCopied, btnType } = props;
-
+  const { type, size, isCopied, btnType, onClick } = props;
   const applyCommonStyle = () => {
     return 'bg-dark-cyan text-white font-bold transition-colors duration-500 ease-in hover:bg-dark-cyan-hover';
   };
@@ -35,7 +34,7 @@ const Button = (props) => {
     }
 
     if (size === 'small' && type === 'square') {
-      return 'w-full h-10 text-base leading-6';
+      return 'w-full h-10 text-base leading-6 rounded-[5px]';
     }
   };
 
@@ -48,6 +47,7 @@ const Button = (props) => {
         isCopied && 'bg-light-violet hover:bg-light-violet'
       )}
       type={btnType}
+      onClick={onClick}
     >
       {props.children}
     </button>
