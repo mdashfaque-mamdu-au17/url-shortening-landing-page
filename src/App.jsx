@@ -12,15 +12,23 @@ import {
 import Form from './components/Sections/Form';
 import Card from './components/Card/Card';
 import Navbar from './components/Sections/Navbar';
+import Hero from './components/Sections/Hero';
+import ShortenUrl from './components/Sections/ShortenUrl';
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="">
       {/* <div className="sticky top-10"> */}
       <div>
         <Navbar />
       </div>
+      <div>
+        <Hero />
+      </div>
+      <ShortenUrl />
+
       <div className="mb-10">
         <Heading type="primary">More than just shorter links</Heading>
       </div>
