@@ -11,8 +11,8 @@ import Link from '../Button/Link';
 const Footer = () => {
   return (
     <footer className="bg-secondary-dark">
-      <section className="py-[56px] md:px-6 md:py-[72px] md:grid md:grid-cols-3 max-w-[1112px] mx-auto lg:grid-cols-5 xl:px-0">
-        <div className="flex justify-center md:justify-start">
+      <section className="py-[56px] md:px-6 md:py-[72px] md:grid md:grid-cols-3 max-w-[1112px] mx-auto lg:grid-cols-5 xl:px-0 xl:flex xl:gap-[108px] xl:justify-between">
+        <div className="flex justify-center md:justify-start xl:pr-[120px]">
           <FooterLogo />
         </div>
         {/* links main container */}
