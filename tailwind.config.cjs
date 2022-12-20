@@ -12,6 +12,7 @@ module.exports = {
         'dark-violet': '#4B3F6B',
         'light-violet': '#3A3054',
         'primary-black': '#34313D',
+        'secondary-dark': '#232127',
         'primary-red': '#F46363',
         'cream-white': '#F2F2F2',
       },
