@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../Button/Button';
 import Input from '../Input/Input';
-const Form = () => {
+const Form = (props) => {
   const [inputLink, setInputLink] = useState('');
   const [inputLinkError, setInputLinkError] = useState(false);
 
@@ -14,6 +14,7 @@ const Form = () => {
       setInputLinkError(true);
       return;
     }
+    props.fetchShortenLinks(inputLink);
     setInputLinkError(false);
     console.log(inputLink);
     setInputLink('');
